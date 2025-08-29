@@ -20,7 +20,7 @@ func TestGetApiKey(t *testing.T) {
 		t.Fatalf("want 123456abc, got: %s and error: %v", apiKey, err)
 	}
 
-	if _, err := GetAPIKey(req2.Header); err != nil {
+	if _, err := GetAPIKey(req2.Header); err == nil {
 		t.Fatalf("wanted an error, got nothing")
 	}
 
