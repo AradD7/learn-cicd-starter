@@ -5,7 +5,6 @@ import (
 	"testing"
 )
 
-
 func TestGetApiKey(t *testing.T) {
 	req1, _ := http.NewRequest("GET", "http://example.com", nil)
 	req2, _ := http.NewRequest("GET", "http://example.com", nil)
